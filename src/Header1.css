@@ -1,0 +1,425 @@
+.parent {
+    height: 100px;
+    /* border: 2px solid; */   
+    background-color:rgba(176, 224, 230, 0.542)  ;
+         /* background-image: url('tower1.jpg');
+  background-position: center;    */
+  display: flex;
+      
+}
+.logo{
+   /* margin-top: -5px; */
+} 
+/* .image1 img{
+  margin-top: -10px;
+} */
+.main4 img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+     margin-left: 40px; 
+     
+}
+.parent h2{
+    margin-left: 30px;
+  margin-top: 35px;
+  color: blue;
+}
+.main5 img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-left: 20px;
+  /* margin-top: 10px; */
+  margin-top: 40px;
+}
+
+.main5 ul{
+  display: flex;
+  column-gap: 100px;
+  margin-left: 67px;
+  margin-top: -20px;
+}
+.main5 li,h4{
+  margin-top: -1px;
+  margin-left: 10px;
+  
+}
+.main5 li{
+  /* margin-left: 50px; */
+}
+
+/* NOTIFICATION */
+
+.annuoncement{
+  background-color: black;
+  color:white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  font-size: .8rem;
+
+}
+.annoouncement-text text1{
+  display:flex;
+  align-items: center;
+  margin-right: 2rem;
+
+}
+
+.image {
+  height: 24px;
+  width: 20px;
+}
+.text1 span{
+margin-right: 2rem;
+}
+.text2 span:not(:last-child){
+  margin-right: 2rem;
+}
+.text2 span:last-child{
+  margin-right: 1rem;
+}
+/* From Uiverse.io by asgardOP */ 
+.loader {
+  width: fit-content;
+  height: 1px;
+  background-color: rgb(58, 58, 58);
+  border-radius: 7px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.loader:hover {
+  background-color: rgb(26, 26, 26);
+}
+
+.loader:hover svg {
+  color: white;
+}
+
+.loader svg {
+  color: rgba(255, 255, 255, 0.651);
+  transform: scale(1.2);
+  transition: 0.2s;
+}
+
+.point {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  width: 6px;
+  height: 6px;
+  background-color: rgb(0, 255, 0);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.point::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background-color: rgb(0, 255, 0);
+  border-radius: 25px;
+  animation: loop 1s 0s infinite;
+}
+
+@keyframes loop {
+  0% {
+    background-color: rgb(0, 255, 0);
+    width: 1px;
+    height: 1px;
+  }
+  100% {
+    background-color: rgba(0, 255, 0, 0);
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* CAROUSEL CSS */
+
+.carousel-container {
+  position: relative;
+  /* max-width: 600px; */
+  margin: auto;
+  height: 700px;
+  width: 100%;
+}
+
+/* Styling for Carousel Slides */
+.carousel-slide {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  /* background: #f0f0f0; */
+  /* border-radius: 10px; */
+  /* background: black; */
+  margin-top: 10px;
+
+}
+.carousel-slide img{
+  width: 100%;
+  height: 700px;
+  margin-top: 10px;
+}
+
+/* Custom Left & Right Arrow Styling */
+.custom-arrow {
+  font-size: 40px;
+  /* color: #1890ff; */
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  /* z-index: 10; */
+  color: black !important;
+  font-weight: bold !important;
+  border: 2px solid;
+  background: black;
+ 
+
+}
+
+/* Left Arrow Position */
+.left-arrow {
+  left: -40px;
+  color: black !important;
+  margin-top: 10px;
+}
+
+/* Right Arrow Position */
+.right-arrow {
+  right: -40px;
+  margin-top: 10px;
+  color: black !important;
+
+}
+.carousel-container .slick-prev, 
+.carousel-container .slick-next {
+  color: black !important;
+  font-weight: bold !important;
+  font-size: 30px !important;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+
+/* From Uiverse.io by suleymanlaarabidev */ 
+.card {
+  width: 270px;
+  height: 150px;
+  position: relative;
+  /* background: rgb(103, 225, 255); */
+  /* background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%); */
+  background-image: linear-gradient(45deg, #ee9ca7 0%, #ffdde1 100%);
+  /* background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%); */
+
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+  font-weight: 900;
+  margin-top: -25px;
+  margin-left: 60px;
+}
+
+.card:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+  /* background: rgb(103, 151, 255); */
+  background-image: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%);
+}
+
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 15px;
+  margin-top: -10px;
+  margin-left: 20px;
+}
+.first-content img{
+  height: 120px;
+  width: 120px;
+  margin-right: 20px;
+}
+.first-content span{
+  font-size: 25px;
+
+}
+
+.card:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  font-size: 0px;
+  transform: rotate(90deg) scale(-1);
+  margin-left: 20px;
+}
+.second-content img{
+  height: 120px;
+  width: 120px;
+  margin-right: 20px;
+}
+.second-content span{
+  font-size: 25px;
+
+}
+.card:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 1.8rem;
+  transform: rotate(0deg);
+}
+.cardholder{
+  display: flex;
+  gap:50px;
+}
+
+/**************************************************************About For Home Page************************************************************************/
+
+.about{
+  display: flex;
+  margin-top: 40px;
+}
+.about_para{
+  /* display: flex; */
+  margin-top: 30px;
+  margin-left: 70px;
+  margin-right: 200px;
+ 
+  
+}
+.about_para h3{
+  margin-left: 30px;
+}
+.about_para img{
+  height: 250px;
+  width: 300px;
+  margin-left: 80px;
+}
+.img{
+ display: flex;
+}
+.img1{
+  display: flex;
+}
+
+/* ************Login CSS**************** */
+
+.login-container {
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  column-span: 8px;
+
+}
+
+.login{
+  column-span: 8px;
+}
+.login-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.login-forgot-password {
+  float: right;
+}
+
+.login-button {
+  width: 100%;
+  /* background-color:blue ; */
+  /* background-color: royalblue; */
+}
+
+/* *******************************************************Registration Form CSS************************************ */
+
+/* src/RegistrationForm.css */
+
+.registration-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  color: #4CAF50;
+}
+
+.form .ant-form-item-label {
+  font-weight: bold;
+}
+
+.form .ant-input {
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.form .ant-btn-primary {
+  /* background-color: #4CAF50; */
+  background-color: royalblue;
+  border-color: #4CAF50;
+}
+
+.form .ant-btn-primary:hover {
+  background-color: #45a049;
+  border-color: #45a049;
+}
+
+.form .ant-checkbox-wrapper {
+  font-size: 14px;
+}
+
+.form .ant-checkbox + span {
+  font-size: 14px;
+}
+
+.form a {
+  /* color: #4CAF50; */
+  color: royalblue;
+}
+
+.form a:hover {
+  color: #45a049;
+  color: royalblue;
+}
